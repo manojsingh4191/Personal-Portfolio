@@ -36,7 +36,7 @@ To run this portfolio locally on your machine, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/manojsingh4191/Personal-Portfolio.git
    cd portfolio
    ```
 
@@ -58,8 +58,8 @@ To run this portfolio locally on your machine, follow these steps:
 Let's build something amazing together! Feel free to reach out to me for collaborations, open-source projects, or just to say hi.
 
 - **Email:** [manojsingh76543212@gmail.com](mailto:manojsingh76543212@gmail.com)
-- **LinkedIn:** [linkedin.com/in/your-linkedin-profile](https://linkedin.com/in/your-linkedin-profile) *(Update with your actual link)*
-- **GitHub:** [github.com/your-github-profile](https://github.com/your-github-profile) *(Update with your actual link)*
+- **LinkedIn:** [linkedin.com/in/manoj-singh-a9a72a280](https://www.linkedin.com/in/manoj-singh-a9a72a280)
+- **GitHub:** [github.com/manojsingh4191](https://github.com/manojsingh4191)
 
 ---
 
