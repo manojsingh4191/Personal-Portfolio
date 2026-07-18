@@ -68,12 +68,15 @@ export default function Navbar() {
       // Clear any existing timeout
       if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
 
-      el.scrollIntoView({ behavior: 'smooth' });
+      // Delay scroll slightly so the mobile menu close render cycle doesn't interrupt it
+      setTimeout(() => {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }, 50);
 
-      // Re-enable observer after smooth scroll completes (~800ms)
+      // Re-enable observer after smooth scroll completes
       scrollTimeout.current = setTimeout(() => {
         isScrolling.current = false;
-      }, 800);
+      }, 850);
     }
   };
 
@@ -99,8 +102,13 @@ export default function Navbar() {
             alt="Manoj Singh"
             className="w-10 h-10 rounded-full object-cover border-2 border-indigo-500/40 shadow-md"
           />
+          {/* Desktop Name */}
           <span className="font-bold text-lg bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent hidden sm:block whitespace-nowrap">
             Manoj Singh
+          </span>
+          {/* Mobile Name/Label */}
+          <span className="text-sm font-bold text-indigo-400 sm:hidden whitespace-nowrap">
+            Portfolio
           </span>
         </motion.div>
 
