@@ -4,7 +4,7 @@ import manojImage from '../assets/IMG_20251010_203207912_HDR.png';
 
 function MagneticButton({ children, href, className }) {
   const ref = useRef(null);
-  
+
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -47,13 +47,13 @@ function MagneticButton({ children, href, className }) {
 }
 
 function useTyping(phrases, speed = 78) {
-  const [display, setDisplay]   = useState('');
-  const [pIdx, setPIdx]         = useState(0);
-  const [cIdx, setCIdx]         = useState(0);
+  const [display, setDisplay] = useState('');
+  const [pIdx, setPIdx] = useState(0);
+  const [cIdx, setCIdx] = useState(0);
   const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
-    const cur   = phrases[pIdx];
+    const cur = phrases[pIdx];
     const delay = deleting ? speed / 2 : speed;
     const timer = setTimeout(() => {
       if (!deleting && cIdx < cur.length) {
@@ -76,7 +76,7 @@ function useTyping(phrases, speed = 78) {
 }
 
 const fadeUp = {
-  hidden:  { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 30 },
   visible: (i = 0) => ({
     opacity: 1,
     y: 0,
@@ -86,8 +86,8 @@ const fadeUp = {
 
 export default function Hero() {
   const typed = useTyping([
-    'Frontend Developer',
-    'MERN Stack Engineer',
+    'MERN Stack Developer',
+    'Backend Engineer',
     'React Enthusiast',
     'Full-Stack Builder',
   ]);
@@ -102,7 +102,7 @@ export default function Hero() {
 
       {/* Global Container Centering applied here */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-20 flex flex-col items-center justify-center">
-        
+
         {/* Centered Flexbox layout for content */}
         <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-16 lg:gap-12 mx-auto">
 
@@ -177,7 +177,7 @@ export default function Hero() {
             className="flex-1 flex items-center justify-center w-full mx-auto relative [perspective:1000px]"
           >
             <motion.div
-              animate={{ 
+              animate={{
                 y: [-15, 15, -15],
                 rotateX: [-5, 5, -5],
                 rotateY: [5, -5, 5]
