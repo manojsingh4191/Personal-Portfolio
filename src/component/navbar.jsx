@@ -108,7 +108,7 @@ export default function Navbar() {
           </span>
           {/* Mobile Name/Label */}
           <span className="text-sm font-bold text-indigo-400 sm:hidden whitespace-nowrap">
-            Portfolio
+            Manoj Singh
           </span>
         </motion.div>
 
